@@ -1,0 +1,80 @@
+# Study Space Finder Web Application
+
+## Table of Contents
+
+- [Description](#description)
+- [Business Requirements](#business-requirements)
+- [User Requirements](#user-requirements)
+- [Vision](#vision)
+- [Scope and Limitations](#scope-and-limitations)
+- [Overall Description](#overall-description)
+- [Product Perspective](#product-perspective)
+- [User Classes and Characteristics](#user-classes-and-characteristics)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+
+## Description
+
+The Study Space Finder is a web application designed to help college students, specifically those at Case Western Reserve University, locate suitable study spaces on campus. It provides detailed information about each study space, including descriptions, operating hours, and the ability to book or reserve a space. The goal is to enhance students' productivity by facilitating the discovery of the ideal study environment.
+
+## Business Requirements
+
+This web application is intended for use by colleges and universities, with an initial pilot deployment at Case Western Reserve University.
+
+## User Requirements
+
+To access the application, users must log in with their Case Western Reserve Student ID, limiting access to college students at Case Western Reserve University.
+
+## Vision
+
+The vision of this web application is to empower students to efficiently find study spaces that maximize their productivity. It acknowledges the diversity of study preferences among students, including indoor vs. outdoor settings, background noise, or silence. The application aims to overcome the limited resources available to help students discover their ideal study areas by providing a centralized database. This database contains essential information such as hours of operation, environment descriptions, images, and reviews from other students. By streamlining the reservation process and making all campus spaces accessible through a single platform, the application increases convenience and aims to improve students' academic performance at CWRU.
+
+## Scope and Limitations
+
+This project primarily targets the student audience at Case Western Reserve University. While the ideal scenario involves implementing the model at universities nationwide, this is a challenging and extensive process that exceeds the scope of a single semester. Additionally, setting up the platform for each college would require individual communication. As a result, the pilot application's scope is limited to the Case Western Reserve University campus.
+
+## Overall Description
+
+### Product Perspective
+
+The Study Space Finder website offers students a new database containing information about the numerous study spaces available on campus. Recognizing that students often need to experiment with various study spaces to find their favorites, the website aims to streamline this process. Information collected and distributed via this site simplifies the discovery of the perfect study environment.
+
+### User Classes and Characteristics
+
+- **Student:** The primary user class is students. They can:
+  - View a list of study spaces on campus.
+  - Access detailed information about a specific space, including photos, descriptions, and reviews.
+  - Write reviews about study spaces.
+  - Check the current crowd level of a space.
+  - Reserve private study spaces.
+
+## Getting Started
+
+To get started with the Study Space Finder web application, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Configure your development environment and database connection.
+3. Build and run the application.
+4. Access the application via a web browser.
+
+## Features
+
+The Study Space Finder offers the following key features:
+
+- Listing and searching for study spaces.
+- Viewing detailed information about each study space.
+- Viewing images and descriptions of study spaces.
+- Reading and writing reviews about study spaces.
+- Checking real-time crowd levels of study spaces.
+- Reserving private study spaces.
+
+## Usage
+
+1. Log in using your Case Western Reserve Student ID.
+2. Browse the list of study spaces on campus.
+3. Click on a specific space to view details, including images and reviews.
+4. Write your own reviews about study spaces.
+5. Check the current crowd level of a space.
+6. Reserve a private study space for your use.
+
