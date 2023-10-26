@@ -8,4 +8,7 @@ public class Building
         foodOptions = fO;
         floorNum = fN;
     }
+    public void highlightStudyRoom(StudyRoom s){
+        
+    }
 }
