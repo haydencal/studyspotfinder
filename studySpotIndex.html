@@ -4,7 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CWRU Study Spots</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="studySpotStyle.css">
+    <style>
+        .navBar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .header {
+            background-image: url("Images/campus-image.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .map {
+            text-align: center;
+        }
+
+        .study-areas {
+            margin: 20px;
+        }
+
+        .study-room-details {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .route {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navBar">
@@ -24,7 +57,6 @@
     <div class="map">
         <!-- Interactive map goes here -->
         <img src="Images/CaseWesternMapLactate.jpg" alt="Map of Case Western Reserve University's Campus" usemap="#campusmap">
-
         <map name="campusmap">
             <area shape="rect" coords="324,741,383,791" alt="Kelvin Smith Library" href="KSL.htm">
             <area shape="rect" coords="383,672,42,730" alt="Tinkham Veale" href="Tink.htm">
@@ -38,7 +70,12 @@
     </div>
     <div class="study-areas">
         <h2>Study Areas in [Selected Building]</h2>
-        <!-- List of study areas, sorted by floor -->
+        <ul>
+            <li>Study Area 1</li>
+            <li>Study Area 2</li>
+            <li>Study Area 3</li>
+            <!-- Add more study areas as needed -->
+        </ul>
     </div>
     <div class="study-room-details">
         <h3>Study Room Name</h3>
@@ -58,3 +95,4 @@
     </div>
 </body>
 </html>
+
