@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Building {
     private int numStudySpaces;  // Number of study spaces in the building
-    private StudySpace[] studySpaces;  // An array to hold information about individual study spaces
+    private StudyRoom[] studySpaces;  // An array to hold information about individual study spaces
     private String[] foodOptions;  // Available food options
     private int floorNum;  // Floor number of building
 
@@ -11,18 +11,18 @@ public class Building {
         numStudySpaces = numSR;
         foodOptions = fO;
         floorNum = fN;
-        studySpaces = new StudySpace[numStudySpaces];
+        studySpaces = new StudyRoom[numStudySpaces];
     }
 
     // Method to add a study space to the building
-    public void addStudySpace(StudySpace space, int index) {
+    public void addStudySpace(StudyRoom space, int index) {
         if (index >= 0 && index < numStudySpaces) {
             studySpaces[index] = space;
         }
     }
 
     // Method to get information about a specific study space
-    public StudySpace getStudySpace(int index) {
+    public StudyRoom getStudySpace(int index) {
         if (index >= 0 && index < numStudySpaces) {
             return studySpaces[index];
         }
@@ -40,7 +40,7 @@ public class Building {
     // Method to reserve a study space
     public boolean reserveStudySpace(int index, String date, String time, String studentId) {
         if (index >= 0 && index < numStudySpaces) {
-            return studySpaces[index].reserve(date, time, studentId);
+            return studySpaces[index].bookRoom(date, time, studentId);
         }
         return false;  // Return false if index is out of bounds
     }
@@ -62,9 +62,9 @@ public class Building {
     }
 
     // Method to retrieve a list of available study spaces
-    public List<StudySpace> getAvailableStudySpaces(String date, String time) {
-        List<StudySpace> availableSpaces = new ArrayList<>();
-        for (StudySpace space : studySpaces) {
+    public List<StudyRoom> getAvailableStudySpaces(String date, String time) {
+        List<StudyRoom> availableSpaces = new ArrayList<>();
+        for (StudyRoom space : studySpaces) {
             if (space.isAvailable(date, time)) {
                 availableSpaces.add(space);
             }
