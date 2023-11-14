@@ -1,3 +1,5 @@
+package studyspotfinder;
+
 import java.util.*;
 
 public class StudyRoom {

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWRU Study Spots</title>
+    <link rel="stylesheet" href="studySpotStyle.css">
+    <style>
+        .navBar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .header {
+            background-image: url("Images/campus-image.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .map {
+            text-align: center;
+        }
+
+        .study-areas {
+            margin: 20px;
+        }
+
+        .study-room-details {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .route {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navBar">
+        <div id="hamMenu">&#9776;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <div class="IntroMsg">
+            <h1>Welcome to CWRU Study Spots</h1>
+            <p>Select a building to find study areas.</p>
+        </div>
+    </div>
+    <div class="map">
+        <!-- Interactive map goes here -->
+        <img src="Images/CaseWesternMapLactate.jpg" alt="Map of Case Western Reserve University's Campus" usemap="#campusmap">
+        <map name="campusmap">
+            <!-- Mather Quad -->
+            <area shape="rect" coords="324,741,383,791" alt="Kelvin Smith Library" href="https://case.edu/library/spaces/reserve-space">
+            <area shape="rect" coords="383,672,420,730" alt="Tinkham Veale" href="Tink.htm">
+            <area shape="poly" coords="433,746,444,733,478,768,465,778" alt="Thwing Center" href="Thwing.htm">
+            <area shape="poly" coords="430,748,462,781,441,802412,765" alt="Hitchcock Hall" href="Hitchcock.htm">
+            <area shape="poly" coords="433,661,441,651,465,672,459,679" alt="Guildford Hall" href="Guilford.htm">
+            <area shape="poly" coords="472,670,491,653,499,661,480,675" alt="Haydn Hall" href="Haydn.htm">
+            <area shape="poly" coords="492,622,506,635,495,646,482,633" alt="Clark Hall" href="Clark.htm">
+            <area shape="poly" coords="498,583,520,565,551,592,527,616," alt="Mather Memorial" href="MatherMem.htm">
+
+            <!-- Regular Quad -->
+        </map>
+
+        <script>
+            function chooseBuilding() {
+
+            }
+        </script>
+    </div>
+    <div class="study-areas">
+        <h2>Study Areas in [Selected Building]</h2>
+        <ul>
+            <li>Study Area 1</li>
+            <li>Study Area 2</li>
+            <li>Study Area 3</li>
+            <!-- Add more study areas as needed -->
+        </ul>
+    </div>
+    <div class="study-room-details">
+        <h3>Study Room Name</h3>
+        <p>Available Spaces: [Number]</p>
+        <p>Size: [Size]</p>
+        <p>Atmosphere: [Quiet/Loud]</p>
+        <p>Nearby Food Access: [Yes/No]</p>
+        <button>Select Room</button>
+    </div>
+    <div class="route">
+        <h3>Directions to [Selected Room]</h3>
+        <ul>
+            <li>Step 1: Go to [Building]</li>
+            <li>Step 2: Enter [Selected Room]</li>
+            <!-- Add more steps as needed -->
+        </ul>
+    </div>
+    <div class="search-bar">
+        <form action="search.php" method="get">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Search for study spots...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
+

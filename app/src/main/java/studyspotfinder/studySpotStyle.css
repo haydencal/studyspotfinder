@@ -1,0 +1,100 @@
+/* General styles for the entire page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('008A1205.jpg'); /* Change to your desired background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333; /* Change text color */
+    margin: 0; /* Remove body margin for full-width content */
+    padding: 0; /* Remove body padding */
+}
+
+/* Styles for the navigation bar */
+.navBar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the navigation links */
+.navBar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navBar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header styles */
+.header {
+    background-image: url("Images/campus-image.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+/* Map styles */
+.map {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Study areas styles */
+.study-areas {
+    margin: 20px;
+    background-color: white; /* Add a background color */
+    padding: 20px; /* Add some padding for better separation */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.study-areas h2 {
+    color: #333; /* Change heading text color */
+}
+
+.study-areas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.study-areas li {
+    margin: 10px 0;
+}
+
+/* Study room details styles */
+.study-room-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9; /* Add a light background color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.study-room-details h3 {
+    color: #333; /* Change heading text color */
+}
+
+/* Route styles */
+.route {
+    margin: 20px;
+    background-color: #f9f9f9; /* Add a light background color */
+    padding: 20px; /* Add some padding for better separation */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.route h3 {
+    color: #333; /* Change heading text color */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+}

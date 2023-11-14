@@ -1,3 +1,4 @@
+package studyspotfinder;
 
 public class RealTime
 {
