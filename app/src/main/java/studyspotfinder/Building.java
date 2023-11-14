@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Building {
+    private String name;
     private int numStudySpaces;  // Number of study spaces in the building
     private StudyRoom[] studySpaces;  // An array to hold information about individual study spaces
     private String[] foodOptions;  // Available food options
     private int floorNum;  // Floor number of building
+    
 
-    public Building(int numSR, String[] fO, int fN) {
+    public Building(String name, int numSR, String[] fO, int fN) {
+        name = this.name;
         numStudySpaces = numSR;
         foodOptions = fO;
         floorNum = fN;
@@ -72,5 +75,9 @@ public class Building {
             }
         }
         return availableSpaces;
+    }
+
+    public String getBuilding() {
+        return name;
     }
 }
