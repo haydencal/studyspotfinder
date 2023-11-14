@@ -59,8 +59,10 @@ public class StudyRoom {
             for(int i = 0; i < reservedList.size(); i++) {
                 if (reservedList.get(i) == studentID) {
                     reservedList.remove(i);
-                    currAvail -= 1;
                     hasRes = true;
+                    if (currAvail < maxAvail) {
+                        currAvail += 1;
+                    }
                 }
             }
         } else {
