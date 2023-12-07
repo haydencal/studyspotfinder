@@ -174,7 +174,8 @@ back-to-top {
 .studySpots .studySpots-carousel.owl-carousel{
     position: relative;
     width: 65%;
-    top: -560px;
+    top: -810px;
+    right: -120px;
 }
 
 .studySpots .studySpots-carousel.owl-carousel .owl-nav .owl-prev {
