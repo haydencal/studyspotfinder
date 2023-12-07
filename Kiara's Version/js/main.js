@@ -77,5 +77,9 @@
         }
     });
 
+    function selectStudyList(){
+        
+    }
+
 })(jQuery);
 

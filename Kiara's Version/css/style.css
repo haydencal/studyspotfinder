@@ -172,11 +172,13 @@ back-to-top {
 /*** Carousel Start ***/
 .studySpots .studySpots-carousel.owl-carousel{
     position: relative;
+    width: 65%;
+    top: -560px;
 }
 
 .studySpots .studySpots-carousel.owl-carousel .owl-nav .owl-prev {
     position: absolute;
-    top: -65px;
+    top: -65px; 
     right: 70px;
     font-size: 20px;
     padding: 2px 20px;
