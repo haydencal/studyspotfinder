@@ -18,7 +18,14 @@
         });
     }
 
-
+    $(document).ready(function () {
+        $('#search-icon-1').click(function () {
+            var keyword = $('input[type=search]').val();
+            // Implement your search logic here using the 'keyword' variable
+            console.log('Searching for:', keyword);
+        });
+    });
+    
 
     // Fixed Navbar
     $(window).scroll(function () {
