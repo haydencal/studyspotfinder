@@ -211,6 +211,12 @@ back-to-top {
 }
 /*** Carousel End ***/
 
+.text-black-sm {
+    color: #000; /* Set the text color to black */
+    font-size: 14px; /* Set the font size to your desired value */
+}
+
+
 
 
 
